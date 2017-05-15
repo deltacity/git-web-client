@@ -314,7 +314,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `issue_has_issue_label` (
   `issue_id` INT NOT NULL,
-  `issue_label_id` INT NULL,
+  `issue_label_id` INT NOT NULL,
   PRIMARY KEY (`issue_id`, `issue_label_id`),
   INDEX `fk_issue_has_issue_label_issue_label1_idx` (`issue_label_id` ASC),
   INDEX `fk_issue_has_issue_label_issue1_idx` (`issue_id` ASC),
